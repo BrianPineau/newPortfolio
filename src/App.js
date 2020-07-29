@@ -6,29 +6,29 @@ import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div style={{height: '300px', position: 'relative'}}>
+  <div style={{height: '100vh', position: 'relative'}}>
     <Layout fixedHeader>
-        <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>Brian Pineau</strong></span>}>
-            <Navigation>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Header>to
-        <Drawer title="Title">
-            <Navigation>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Drawer>
-        <Content>
-          <Main/>
-        </Content>
+      <Header className="header-color" title="Title">
+        <Navigation>
+          <Link to="/aboutme">About Me</Link>
+          <Link to="/resume">Resume</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </Navigation>
+      </Header>
+      <Drawer title="Title">
+        <Navigation>
+          <Link to="/aboutme">About Me</Link>
+          <Link to="/resume">Resume</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </Navigation>
+      </Drawer>
+      <Content>
+        <Main/>
+      </Content>
     </Layout>
-</div>
+  </div>
   );
 }
 

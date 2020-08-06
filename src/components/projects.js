@@ -9,7 +9,7 @@ class Projects extends Component {
 
   //Select the category
   toggleCategories() {
-    if(this.state.activeTab === 0) {
+    if(this.state.activeTab === 0) { 
       return (
 
         <div className="projects-grid">

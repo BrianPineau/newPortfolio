@@ -18,6 +18,7 @@ height: 100%;
 
 .projects-grid {
   display: flex; 
+  justify-content: space-between;
 }
 
 /*  Resume Page CSS  */
@@ -26,7 +27,7 @@ height: 100%;
   color: white;
   padding: 2em;
 }
-
+ 
 
 
 /*  Contact Page CSS  */
